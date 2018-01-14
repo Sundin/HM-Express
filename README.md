@@ -1,9 +1,30 @@
 # HM-Express
 A boilerplate project for an Express backend.
 
-## Instructions
+## Getting started
     npm install 
     npm start
+    
+## Usage instructions
+
+### Adding routes
+Any `.js`-file you put directly into the `/routes` directory will be automatically imported. Define as many routes as you wish in those files using the following format:
+
+    module.exports = function(app) {
+        app.get('/', (req, res) => res.send('Hello World!'));
+        
+        // Other routes
+    };
+
+### Environment variables
+Define all environment variables in the `.env` file.
+
+### Error handling
+Make sure you use Node.js built-in Error type when rejecting promises:  
+
+    Promise.reject(new Error('Something bad happened')
+    
+Unhandled rejections will be caught in `app.js`.
     
 ## Dependencies
 * [Express](https://expressjs.com/)
