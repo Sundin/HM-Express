@@ -11,7 +11,9 @@ A boilerplate project for an Express backend.
 Any `.js`-file you put directly into the `/routes` directory will be automatically imported. Define as many routes as you wish in those files using the following format:
 
     module.exports = function(app) {
-        app.get('/', (req, res) => res.send('Hello World!'));
+        app.get('/page1', (req, res) => res.send('This is page 1!'));
+        
+        app.get('/page2', (req, res) => res.send('This is page 2!'));
         
         // Other routes
     };
