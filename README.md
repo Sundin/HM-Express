@@ -19,7 +19,7 @@ Any `.js`-file you put directly into the `/routes` directory will be automatical
     };
 
 ### Environment variables
-Define all environment variables in the `.env` file.
+Define all environment variables in the `.env` file. Remember that production variables should never make it into the repository!
     
 ## Dependencies
 * [Express](https://expressjs.com/): A very widely used web framework.
