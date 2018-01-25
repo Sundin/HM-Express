@@ -82,7 +82,6 @@
       "no-new-wrappers": 2,            // http://eslint.org/docs/rules/no-new-wrappers
       "no-octal": 2,                   // http://eslint.org/docs/rules/no-octal
       "no-octal-escape": 2,            // http://eslint.org/docs/rules/no-octal-escape
-      //"no-param-reassign": 2,          // http://eslint.org/docs/rules/no-param-reassign
       "no-proto": 2,                   // http://eslint.org/docs/rules/no-proto
       "no-redeclare": 2,               // http://eslint.org/docs/rules/no-redeclare
       "no-return-assign": 2,           // http://eslint.org/docs/rules/no-return-assign
@@ -92,7 +91,6 @@
       "no-throw-literal": 2,           // http://eslint.org/docs/rules/no-throw-literal
       "no-with": 2,                    // http://eslint.org/docs/rules/no-with
       "radix": 2,                      // http://eslint.org/docs/rules/radix
-      //"vars-on-top": 2,                // http://eslint.org/docs/rules/vars-on-top
       "wrap-iife": [2, "any"],         // http://eslint.org/docs/rules/wrap-iife
       "yoda": 2,                       // http://eslint.org/docs/rules/yoda
   
@@ -116,7 +114,6 @@
       }],
       "comma-style": [2, "last"],      // http://eslint.org/docs/rules/comma-style
       "eol-last": 2,                   // http://eslint.org/docs/rules/eol-last
-      //"func-names": 1,                 // http://eslint.org/docs/rules/func-names
       "key-spacing": [2, {             // http://eslint.org/docs/rules/key-spacing
         "beforeColon": false,
         "afterColon": true
