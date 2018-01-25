@@ -30,5 +30,6 @@ Unhandled rejections will be caught in `app.js`.
     
 ## Dependencies
 * [Express](https://expressjs.com/)
+* [Helmet](https://github.com/helmetjs/helmet): Helps increasing security by setting various HTTP headers.
 * [dotenv](https://github.com/motdotla/dotenv): For handling environment variables.
 * [ESLint](https://eslint.org/): A good linter.

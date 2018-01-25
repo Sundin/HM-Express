@@ -3,7 +3,10 @@
 require('dotenv').config();
 
 const express = require('express');
+const helmet = require('helmet');
+
 const app = express();
+app.use(helmet());
 
 // Import all routes defined in the /routes folder
 require('./routes')(app);
