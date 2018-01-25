@@ -33,3 +33,6 @@ Unhandled rejections will be caught in `app.js`.
 * [Helmet](https://github.com/helmetjs/helmet): Helps increasing security by setting various HTTP headers.
 * [dotenv](https://github.com/motdotla/dotenv): For handling environment variables.
 * [ESLint](https://eslint.org/): A good linter.
+
+## Acknowledgements and further reading
+* [Node.js security checklist](https://blog.risingstack.com/node-js-security-checklist/)
