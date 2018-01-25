@@ -26,6 +26,7 @@
        */
       "no-process-exit": 0,            // http://eslint.org/docs/rules/no-process-exit
       "no-sync": 0,                    // http://eslint.org/docs/rules/no-sync
+      "prefer-promise-reject-errors": "error", // https://eslint.org/docs/rules/prefer-promise-reject-errors
   
       /**
        * Possible errors
