@@ -19,7 +19,11 @@ Any `.js`-file you put directly into the `/routes` directory will be automatical
     };
 
 ### Environment variables
-Define all environment variables in the `.env` file. Remember that production variables should never make it into the repository!
+Define all environment variables in the `.env` file. Remember that production variables such as server credentials should never make it into the repository!
+
+These are the environment variables used by default:  
+* **PORT**: The port on which to run the server.  
+* **NODE_ENV**: Should be set to `production` in your live environment.  
     
 ## Dependencies
 * [Express](https://expressjs.com/): A very widely used web framework.
@@ -35,9 +39,17 @@ Define all environment variables in the `.env` file. Remember that production va
 ### Error handling
 Make sure you use Node.js built-in Error type when rejecting promises:  
 
-    Promise.reject(new Error('Something bad happened')
-    
-Unhandled rejections will be caught in `app.js`.
+    Promise.reject(new Error('Something bad happened');
+
+Whenever you make a promise call in any of your endpoints, add `.catch(next)` to the end of the promise in order to forwards any errors to the common error handler defined in `app.js`.
+
+    app.get('/', (req, res, next) => {
+        return new Promise((resolve, reject) => {
+            // ...
+        }).catch(next);
+    });
+
+As a final fallback, `app.js` will also catch any unhandled rejections. However, you should always strive to handle all potential errors in production-ready code.
 
 ### PM2
 [PM2](http://pm2.keymetrics.io/) is a very useful tool for running your application in so-called cluster mode, which will enable your application to make use of all available CPU cores instead of just one.
