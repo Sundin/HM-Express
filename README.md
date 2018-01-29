@@ -1,6 +1,5 @@
 # HM-Express
-A boilerplate project for an Express backend.
-
+After setting up a multitude of Express projects, I realized that I repeated the same steps each time (either by copy-pasting code from one of the old projects or looking up the same things online each time). I therefore decided to set up this boilerplate project, ready for you to clone and just start coding. All onboard the heavy metal express! :steam_locomotive:
 ## Getting started
     npm install 
     npm start
@@ -10,6 +9,8 @@ A boilerplate project for an Express backend.
 ### Adding routes
 Any `.js`-file you put directly into the `/routes` directory will be automatically imported. Define as many routes as you wish in those files using the following format:
 
+    'use strict';
+    
     module.exports = function(app) {
         app.get('/page1', (req, res) => res.send('This is page 1!'));
         
