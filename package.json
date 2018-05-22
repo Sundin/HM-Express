@@ -9,12 +9,12 @@
   "author": "Gustav Sundin",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "4.0.0",
-    "express": "4.16.2",
-    "helmet": "3.10.0"
+    "dotenv": "5.0.1",
+    "express": "4.16.3",
+    "helmet": "3.12.1"
   },
   "devDependencies": {
-    "eslint": "4.16.0",
-    "eslint-plugin-node": "5.2.1"
+    "eslint": "4.19.1",
+    "eslint-plugin-node": "6.0.1"
   }
 }
