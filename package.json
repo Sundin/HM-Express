@@ -4,7 +4,8 @@
   "description": "A boilerplate project for an Express backend.",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "lint": "node_modules/eslint/bin/eslint.js --fix ."
   },
   "author": "Gustav Sundin",
   "license": "ISC",

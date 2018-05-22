@@ -58,6 +58,8 @@ As a final fallback, `app.js` will also catch any unhandled rejections. However,
 * Starting the server (instead of using `npm start`): `pm2 start app.js -i max --attach` (the `--attach` flag will stream your application's log output to the console, so in production you don't need this flag).
 
 ### Linting
+Run the linter with `npm run lint`.
+
 Feel free to modify the `.eslintrc` file according to your personal preferences.
 
 ## Acknowledgements and further reading
