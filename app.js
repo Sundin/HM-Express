@@ -7,6 +7,7 @@ const helmet = require('helmet');
 
 const app = express();
 app.use(helmet());
+app.use(express.json());
 
 // Import all routes defined in the /routes folder
 require('./routes')(app);

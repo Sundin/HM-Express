@@ -28,6 +28,7 @@ These are the environment variables used by default:
     
 ## Dependencies
 * [Express](https://expressjs.com/): A very widely used web framework.
+  * `express.json()`: Built in middleware used for decoding json sent in request body.
 * [Helmet](https://github.com/helmetjs/helmet): Helps increasing security by setting various HTTP headers.
 * [dotenv](https://github.com/motdotla/dotenv): For handling environment variables.
 * [ESLint](https://eslint.org/): A good linter.
