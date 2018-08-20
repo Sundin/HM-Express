@@ -37,6 +37,7 @@ These are the environment variables used by default:
 ### Keeping dependencies up to date
 * Run `npm outdated` regurarly to find out if you are using any outdated dependencies.
 * You can also use [Retire.js](https://github.com/RetireJS/retire.js/) to scan your dependencies for know vulnerabilities. Install it with `npm install -g retire` and run it in the application's root folder with `retire`.
+* Starting from npm 6.0, you can also directly run `npm audit` to scan your project's dependencies for vulnerabilities. 
 
 ### Error handling
 Make sure you use Node.js built-in Error type when rejecting promises:  
